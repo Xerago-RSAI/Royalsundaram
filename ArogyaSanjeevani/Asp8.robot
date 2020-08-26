@@ -9,6 +9,18 @@ ${options}     driver
 
 
 *** Keywords ***
+Jenkins browser launch
+    Set Selenium Speed    1s
+    ${chrome_options} =     Evaluate    sys.modules['selenium.webdriver'].ChromeOptions()    sys, selenium.webdriver
+    Call Method    ${chrome_options}   add_argument    headless
+    Call Method    ${chrome_options}   add_argument    disable-gpu
+    Call Method    ${chrome_options}   add_argument    no-sandbox
+    Create WebDriver  Chrome  chrome_options=${chrome_options}
+    Go To    ${browser}
+    Maximize Browser Window
+    Set Window Size    1024    768    
+    Set Browser Implicit Wait    15s
+
 First Name
      Input Text    xpath=.//input[@id='txtFName']    Harish
     
@@ -29,12 +41,8 @@ Your Premium Plan
 * Test Cases *
 NSTP Individual case with Spouse and BMI above 33
        
-     Set Selenium Speed    .5
-     Open Browser     ${browser}   chrome 
-     maximize Browser Window
-     Set Browser Implicit Wait    50s     
-     
-     
+     Jenkins   
+          
         # GetQuote Page   
     Click Element    xpath=.//i[@class='rs-icon icon-plus']
         # Select Spouse 
