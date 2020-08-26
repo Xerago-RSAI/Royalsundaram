@@ -4,7 +4,7 @@ Library           SeleniumLibrary
 
     
 *** Variables ***
-${browser}     http://aspdev.xerago.com/asp/web/
+${browser}     http://asptest.xerago.com/asptest/web/aspquote
 ${options}     driver
 
 
