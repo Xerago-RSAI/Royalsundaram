@@ -42,12 +42,8 @@ Your Premium Plan
 * Test Cases *
 STP Individual flow with Son as Insured
        
-     Set Selenium Speed    .5
-     Open Browser     ${browser}   chrome 
-     maximize Browser Window
-     Set Browser Implicit Wait    50s     
-     
-     
+     Jenkins    
+          
         # GetQuote Page   
     Click Element    xpath=.//i[@class='rs-icon icon-plus']
         # Select Son
