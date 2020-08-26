@@ -1,0 +1,909 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot rpa="false" generated="20200826 11:19:30.918" generator="Robot 3.2.1 (Python 2.7.16 on win32)">
+<suite source="E:\Balu\RobotFrameWorkSpace\Arogya-Sanjeevani-ASP" id="s1" name="Arogya-Sanjeevani-ASP">
+<suite source="E:\Balu\RobotFrameWorkSpace\Arogya-Sanjeevani-ASP\Asp10.robot" id="s1-s1" name="Asp10">
+<test id="s1-s1-t1" name="STP Individual flow with Daughter as Insured">
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<arguments>
+<arg>.5</arg>
+</arguments>
+<status status="PASS" endtime="20200826 11:19:31.295" starttime="20200826 11:19:31.282"></status>
+</kw>
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${browser}</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20200826 11:19:31.302" level="INFO">Opening browser 'chrome' to base url 'http://aspdev.xerago.com/asp/web/'.</msg>
+<status status="PASS" endtime="20200826 11:19:35.302" starttime="20200826 11:19:31.297"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20200826 11:19:36.970" starttime="20200826 11:19:35.304"></status>
+</kw>
+<kw name="Set Browser Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>50s</arg>
+</arguments>
+<status status="PASS" endtime="20200826 11:19:37.485" starttime="20200826 11:19:36.972"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=.//i[@class='rs-icon icon-plus']</arg>
+</arguments>
+<msg timestamp="20200826 11:19:37.497" level="INFO">Clicking element 'xpath=.//i[@class='rs-icon icon-plus']'.</msg>
+<status status="PASS" endtime="20200826 11:19:38.614" starttime="20200826 11:19:37.486"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=.//input[@id='chkDaughter']</arg>
+</arguments>
+<msg timestamp="20200826 11:19:38.618" level="INFO">Clicking element 'xpath=.//input[@id='chkDaughter']'.</msg>
+<status status="PASS" endtime="20200826 11:19:39.723" starttime="20200826 11:19:38.616"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=(.//button[text()='SUBMIT'])[1]</arg>
+</arguments>
+<msg timestamp="20200826 11:19:39.727" level="INFO">Clicking element 'xpath=(.//button[text()='SUBMIT'])[1]'.</msg>
+<status status="PASS" endtime="20200826 11:19:40.843" starttime="20200826 11:19:39.725"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//label[@for='Yes_q1']</arg>
+</arguments>
+<msg timestamp="20200826 11:19:40.846" level="INFO">Clicking element 'xpath=//label[@for='Yes_q1']'.</msg>
+<status status="PASS" endtime="20200826 11:19:41.935" starttime="20200826 11:19:40.844"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=(//button[text()='SUBMIT'])[2]</arg>
+</arguments>
+<msg timestamp="20200826 11:19:41.938" level="INFO">Clicking element 'xpath=(//button[text()='SUBMIT'])[2]'.</msg>
+<status status="PASS" endtime="20200826 11:19:43.020" starttime="20200826 11:19:41.936"></status>
+</kw>
+<kw name="First Name">
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=.//input[@id='txtFName']</arg>
+<arg>Harish</arg>
+</arguments>
+<msg timestamp="20200826 11:19:43.039" level="INFO">Typing text 'Harish' into text field 'xpath=.//input[@id='txtFName']'.</msg>
+<status status="PASS" endtime="20200826 11:19:44.766" starttime="20200826 11:19:43.029"></status>
+</kw>
+<status status="PASS" endtime="20200826 11:19:44.768" starttime="20200826 11:19:43.022"></status>
+</kw>
+<kw name="Last Name">
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=.//input[@id='txtLName']</arg>
+<arg>Hari</arg>
+</arguments>
+<msg timestamp="20200826 11:19:44.780" level="INFO">Typing text 'Hari' into text field 'xpath=.//input[@id='txtLName']'.</msg>
+<status status="PASS" endtime="20200826 11:19:46.457" starttime="20200826 11:19:44.777"></status>
+</kw>
+<status status="PASS" endtime="20200826 11:19:46.459" starttime="20200826 11:19:44.769"></status>
+</kw>
+<kw name="Gender">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//label[@for='male']</arg>
+</arguments>
+<msg timestamp="20200826 11:19:46.470" level="INFO">Clicking element 'xpath=//label[@for='male']'.</msg>
+<status status="PASS" endtime="20200826 11:19:47.557" starttime="20200826 11:19:46.468"></status>
+</kw>
+<status status="PASS" endtime="20200826 11:19:47.559" starttime="20200826 11:19:46.460"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=.//input[@id='txtDOB']</arg>
+</arguments>
+<msg timestamp="20200826 11:19:47.563" level="INFO">Clicking element 'xpath=.//input[@id='txtDOB']'.</msg>
+<status status="PASS" endtime="20200826 11:19:48.694" starttime="20200826 11:19:47.561"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//th[@class="datepicker-switch"]</arg>
+</arguments>
+<msg timestamp="20200826 11:19:48.698" level="INFO">Clicking element 'xpath=//th[@class="datepicker-switch"]'.</msg>
+<status status="PASS" endtime="20200826 11:19:49.802" starttime="20200826 11:19:48.696"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=(//th[@class="datepicker-switch"])[2]</arg>
+</arguments>
+<msg timestamp="20200826 11:19:49.806" level="INFO">Clicking element 'xpath=(//th[@class="datepicker-switch"])[2]'.</msg>
+<status status="PASS" endtime="20200826 11:19:50.901" starttime="20200826 11:19:49.804"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=(//th[@class="prev"])[3]</arg>
+</arguments>
+<msg timestamp="20200826 11:19:50.907" level="INFO">Clicking element 'xpath=(//th[@class="prev"])[3]'.</msg>
+<status status="PASS" endtime="20200826 11:19:52.010" starttime="20200826 11:19:50.904"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=(//th[@class="prev"])[3]</arg>
+</arguments>
+<msg timestamp="20200826 11:19:52.014" level="INFO">Clicking element 'xpath=(//th[@class="prev"])[3]'.</msg>
+<status status="PASS" endtime="20200826 11:19:53.078" starttime="20200826 11:19:52.012"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=(//th[@class="prev"])[3]</arg>
+</arguments>
+<msg timestamp="20200826 11:19:53.082" level="INFO">Clicking element 'xpath=(//th[@class="prev"])[3]'.</msg>
+<status status="PASS" endtime="20200826 11:19:54.153" starttime="20200826 11:19:53.080"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=(//th[@class="prev"])[3]</arg>
+</arguments>
+<msg timestamp="20200826 11:19:54.157" level="INFO">Clicking element 'xpath=(//th[@class="prev"])[3]'.</msg>
+<status status="PASS" endtime="20200826 11:19:55.230" starttime="20200826 11:19:54.155"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=(//th[@class="prev"])[3]</arg>
+</arguments>
+<msg timestamp="20200826 11:19:55.235" level="INFO">Clicking element 'xpath=(//th[@class="prev"])[3]'.</msg>
+<status status="PASS" endtime="20200826 11:19:56.316" starttime="20200826 11:19:55.232"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>//span[@class="year"]</arg>
+</arguments>
+<msg timestamp="20200826 11:19:56.320" level="INFO">Clicking element '//span[@class="year"]'.</msg>
+<status status="PASS" endtime="20200826 11:19:57.425" starttime="20200826 11:19:56.318"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>//span[@class="month focused"]</arg>
+</arguments>
+<msg timestamp="20200826 11:19:57.429" level="INFO">Clicking element '//span[@class="month focused"]'.</msg>
+<status status="PASS" endtime="20200826 11:19:58.535" starttime="20200826 11:19:57.427"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=(//td[@class="day"])[3]</arg>
+</arguments>
+<msg timestamp="20200826 11:19:58.540" level="INFO">Clicking element 'xpath=(//td[@class="day"])[3]'.</msg>
+<status status="PASS" endtime="20200826 11:19:59.657" starttime="20200826 11:19:58.537"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20200826 11:20:04.667" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20200826 11:20:04.667" starttime="20200826 11:19:59.659"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=(//h5[@class='mb-0'])[3]</arg>
+</arguments>
+<msg timestamp="20200826 11:20:04.671" level="INFO">Clicking element 'xpath=(//h5[@class='mb-0'])[3]'.</msg>
+<status status="PASS" endtime="20200826 11:20:05.797" starttime="20200826 11:20:04.669"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=.//input[@id='txtDOBDaughter1']</arg>
+</arguments>
+<msg timestamp="20200826 11:20:05.801" level="INFO">Clicking element 'xpath=.//input[@id='txtDOBDaughter1']'.</msg>
+<status status="PASS" endtime="20200826 11:20:06.936" starttime="20200826 11:20:05.799"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>//th[@class="datepicker-switch"]</arg>
+</arguments>
+<msg timestamp="20200826 11:20:06.942" level="INFO">Clicking element '//th[@class="datepicker-switch"]'.</msg>
+<status status="PASS" endtime="20200826 11:20:08.030" starttime="20200826 11:20:06.938"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=(//th[@class="datepicker-switch"])[2]</arg>
+</arguments>
+<msg timestamp="20200826 11:20:08.035" level="INFO">Clicking element 'xpath=(//th[@class="datepicker-switch"])[2]'.</msg>
+<status status="PASS" endtime="20200826 11:20:09.132" starttime="20200826 11:20:08.032"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=(//th[@class="prev"])[3]</arg>
+</arguments>
+<msg timestamp="20200826 11:20:09.137" level="INFO">Clicking element 'xpath=(//th[@class="prev"])[3]'.</msg>
+<status status="PASS" endtime="20200826 11:20:10.232" starttime="20200826 11:20:09.134"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=(//th[@class="prev"])[3]</arg>
+</arguments>
+<msg timestamp="20200826 11:20:10.236" level="INFO">Clicking element 'xpath=(//th[@class="prev"])[3]'.</msg>
+<status status="PASS" endtime="20200826 11:20:11.314" starttime="20200826 11:20:10.234"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>//span[@class="year focused"]</arg>
+</arguments>
+<msg timestamp="20200826 11:20:11.318" level="INFO">Clicking element '//span[@class="year focused"]'.</msg>
+<status status="PASS" endtime="20200826 11:20:12.439" starttime="20200826 11:20:11.316"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=(//span[@class="month"])[7]</arg>
+</arguments>
+<msg timestamp="20200826 11:20:12.443" level="INFO">Clicking element 'xpath=(//span[@class="month"])[7]'.</msg>
+<status status="PASS" endtime="20200826 11:20:13.562" starttime="20200826 11:20:12.441"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=(//td[@class="day"])[29]</arg>
+</arguments>
+<msg timestamp="20200826 11:20:13.566" level="INFO">Clicking element 'xpath=(//td[@class="day"])[29]'.</msg>
+<status status="PASS" endtime="20200826 11:20:14.666" starttime="20200826 11:20:13.564"></status>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=.//label[@for='rangePreferredSum']</arg>
+</arguments>
+<assign>
+<var>${name}</var>
+</assign>
+<msg timestamp="20200826 11:20:15.729" level="INFO">${name} = Select your preferred Sum Insured</msg>
+<status status="PASS" endtime="20200826 11:20:15.729" starttime="20200826 11:20:14.668"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${name}</arg>
+</arguments>
+<status status="PASS" endtime="20200826 11:20:15.741" starttime="20200826 11:20:15.731"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3s</arg>
+</arguments>
+<msg timestamp="20200826 11:20:18.745" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" endtime="20200826 11:20:18.745" starttime="20200826 11:20:15.743"></status>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<arguments>
+<arg>window.scrollTo(700, document.body.scrollHeight)</arg>
+</arguments>
+<msg timestamp="20200826 11:20:18.759" level="INFO">Executing JavaScript:
+window.scrollTo(700, document.body.scrollHeight)
+Without any arguments.</msg>
+<status status="PASS" endtime="20200826 11:20:19.272" starttime="20200826 11:20:18.747"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=(//div[@class="slider-handle min-slider-handle round"])[2]</arg>
+</arguments>
+<msg timestamp="20200826 11:20:19.276" level="INFO">Clicking element 'xpath=(//div[@class="slider-handle min-slider-handle round"])[2]'.</msg>
+<status status="PASS" endtime="20200826 11:20:20.359" starttime="20200826 11:20:19.273"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=(.//div[@class='slider-tick-label'])[4]</arg>
+</arguments>
+<msg timestamp="20200826 11:20:20.363" level="INFO">Clicking element 'xpath=(.//div[@class='slider-tick-label'])[4]'.</msg>
+<status status="PASS" endtime="20200826 11:20:21.454" starttime="20200826 11:20:20.361"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20200826 11:20:26.458" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20200826 11:20:26.459" starttime="20200826 11:20:21.456"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=.//input[@id='edit-mobile-no']</arg>
+<arg>9940613572</arg>
+</arguments>
+<msg timestamp="20200826 11:20:26.464" level="INFO">Typing text '9940613572' into text field 'xpath=.//input[@id='edit-mobile-no']'.</msg>
+<status status="PASS" endtime="20200826 11:20:28.207" starttime="20200826 11:20:26.461"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=.//input[@id='edit-email']</arg>
+<arg>xyz@gmail.com</arg>
+</arguments>
+<msg timestamp="20200826 11:20:28.211" level="INFO">Typing text 'xyz@gmail.com' into text field 'xpath=.//input[@id='edit-email']'.</msg>
+<status status="PASS" endtime="20200826 11:20:29.988" starttime="20200826 11:20:28.208"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=.//input[@value='GET QUOTE']</arg>
+</arguments>
+<msg timestamp="20200826 11:20:29.993" level="INFO">Clicking element 'xpath=.//input[@value='GET QUOTE']'.</msg>
+<status status="PASS" endtime="20200826 11:20:32.667" starttime="20200826 11:20:29.990"></status>
+</kw>
+<kw name="QUOTE ID">
+<kw name="Get Text" library="SeleniumLibrary">
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//h5[@class='amt-sub-text quoteId-txt']</arg>
+</arguments>
+<assign>
+<var>${Quote}</var>
+</assign>
+<msg timestamp="20200826 11:20:33.723" level="INFO">${Quote} = QUOTE ID: RSAIASP003349</msg>
+<status status="PASS" endtime="20200826 11:20:33.723" starttime="20200826 11:20:32.677"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${Quote}</arg>
+</arguments>
+<status status="PASS" endtime="20200826 11:20:33.728" starttime="20200826 11:20:33.725"></status>
+</kw>
+<status status="PASS" endtime="20200826 11:20:33.730" starttime="20200826 11:20:32.669"></status>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=(//span[@class='premimumm-amt amt-text'])[2]</arg>
+</arguments>
+<assign>
+<var>${Gst}</var>
+</assign>
+<msg timestamp="20200826 11:20:34.781" level="INFO">${Gst} = ₹ 16,447/-</msg>
+<status status="PASS" endtime="20200826 11:20:34.782" starttime="20200826 11:20:33.731"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${Gst}</arg>
+</arguments>
+<status status="PASS" endtime="20200826 11:20:34.786" starttime="20200826 11:20:34.783"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=.//span[text()='PROCEED']</arg>
+</arguments>
+<msg timestamp="20200826 11:20:34.790" level="INFO">Clicking element 'xpath=.//span[text()='PROCEED']'.</msg>
+<status status="PASS" endtime="20200826 11:20:39.297" starttime="20200826 11:20:34.787"></status>
+</kw>
+<kw name="Select From List By Index" library="SeleniumLibrary">
+<doc>Selects options from selection list ``locator`` by ``indexes``.</doc>
+<arguments>
+<arg>id=selfddIHeight</arg>
+<arg>3</arg>
+</arguments>
+<msg timestamp="20200826 11:20:39.309" level="INFO">Selecting options from selection list 'id=selfddIHeight' by index 3.</msg>
+<status status="PASS" endtime="20200826 11:20:45.012" starttime="20200826 11:20:39.299"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=sleftxtWight</arg>
+<arg>67</arg>
+</arguments>
+<msg timestamp="20200826 11:20:45.017" level="INFO">Typing text '67' into text field 'id=sleftxtWight'.</msg>
+<status status="PASS" endtime="20200826 11:20:46.710" starttime="20200826 11:20:45.014"></status>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<arguments>
+<arg>window.scrollTo(700, document.body.scrollHeight)</arg>
+</arguments>
+<msg timestamp="20200826 11:20:46.716" level="INFO">Executing JavaScript:
+window.scrollTo(700, document.body.scrollHeight)
+Without any arguments.</msg>
+<status status="PASS" endtime="20200826 11:20:47.243" starttime="20200826 11:20:46.712"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=(//h5[@class='mb-0'])[3]</arg>
+</arguments>
+<msg timestamp="20200826 11:20:47.247" level="INFO">Clicking element 'xpath=(//h5[@class='mb-0'])[3]'.</msg>
+<status status="PASS" endtime="20200826 11:20:48.361" starttime="20200826 11:20:47.245"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=DaughterFName1</arg>
+<arg>Kirthi</arg>
+</arguments>
+<msg timestamp="20200826 11:20:48.365" level="INFO">Typing text 'Kirthi' into text field 'id=DaughterFName1'.</msg>
+<status status="PASS" endtime="20200826 11:20:50.071" starttime="20200826 11:20:48.362"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=DaughterLName1</arg>
+<arg>Suresh</arg>
+</arguments>
+<msg timestamp="20200826 11:20:50.075" level="INFO">Typing text 'Suresh' into text field 'id=DaughterLName1'.</msg>
+<status status="PASS" endtime="20200826 11:20:51.780" starttime="20200826 11:20:50.073"></status>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<arguments>
+<arg>window.scrollTo(700, document.body.scrollHeight)</arg>
+</arguments>
+<msg timestamp="20200826 11:20:51.786" level="INFO">Executing JavaScript:
+window.scrollTo(700, document.body.scrollHeight)
+Without any arguments.</msg>
+<status status="PASS" endtime="20200826 11:20:52.297" starttime="20200826 11:20:51.782"></status>
+</kw>
+<kw name="Select From List By Index" library="SeleniumLibrary">
+<doc>Selects options from selection list ``locator`` by ``indexes``.</doc>
+<arguments>
+<arg>id=dagtddIHeight1</arg>
+<arg>3</arg>
+</arguments>
+<msg timestamp="20200826 11:20:52.302" level="INFO">Selecting options from selection list 'id=dagtddIHeight1' by index 3.</msg>
+<status status="PASS" endtime="20200826 11:20:58.023" starttime="20200826 11:20:52.299"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=dagttxtWight1</arg>
+<arg>67</arg>
+</arguments>
+<msg timestamp="20200826 11:20:58.027" level="INFO">Typing text '67' into text field 'id=dagttxtWight1'.</msg>
+<status status="PASS" endtime="20200826 11:20:59.702" starttime="20200826 11:20:58.025"></status>
+</kw>
+<kw name="QUOTE ID">
+<kw name="Get Text" library="SeleniumLibrary">
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//h5[@class='amt-sub-text quoteId-txt']</arg>
+</arguments>
+<assign>
+<var>${Quote}</var>
+</assign>
+<msg timestamp="20200826 11:21:00.765" level="INFO">${Quote} = QUOTE ID: RSAIASP003349</msg>
+<status status="PASS" endtime="20200826 11:21:00.765" starttime="20200826 11:20:59.706"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${Quote}</arg>
+</arguments>
+<status status="PASS" endtime="20200826 11:21:00.770" starttime="20200826 11:21:00.767"></status>
+</kw>
+<status status="PASS" endtime="20200826 11:21:00.772" starttime="20200826 11:20:59.704"></status>
+</kw>
+<kw name="Your Premium Plan">
+<kw name="Get Text" library="SeleniumLibrary">
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//span[@class='amt-text premimumm-amt']</arg>
+</arguments>
+<assign>
+<var>${Gst}</var>
+</assign>
+<msg timestamp="20200826 11:21:01.842" level="INFO">${Gst} = ₹ 16,447/-</msg>
+<status status="PASS" endtime="20200826 11:21:01.842" starttime="20200826 11:21:00.781"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${Gst}</arg>
+</arguments>
+<status status="PASS" endtime="20200826 11:21:01.848" starttime="20200826 11:21:01.844"></status>
+</kw>
+<status status="PASS" endtime="20200826 11:21:01.853" starttime="20200826 11:21:00.774"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=.//span[text()='PROCEED']</arg>
+</arguments>
+<msg timestamp="20200826 11:21:01.857" level="INFO">Clicking element 'xpath=.//span[text()='PROCEED']'.</msg>
+<status status="PASS" endtime="20200826 11:21:03.136" starttime="20200826 11:21:01.855"></status>
+</kw>
+<kw name="QUOTE ID">
+<kw name="Get Text" library="SeleniumLibrary">
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//h5[@class='amt-sub-text quoteId-txt']</arg>
+</arguments>
+<assign>
+<var>${Quote}</var>
+</assign>
+<msg timestamp="20200826 11:21:04.189" level="INFO">${Quote} = QUOTE ID: RSAIASP003349</msg>
+<status status="PASS" endtime="20200826 11:21:04.189" starttime="20200826 11:21:03.141"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${Quote}</arg>
+</arguments>
+<status status="PASS" endtime="20200826 11:21:04.194" starttime="20200826 11:21:04.191"></status>
+</kw>
+<status status="PASS" endtime="20200826 11:21:04.195" starttime="20200826 11:21:03.138"></status>
+</kw>
+<kw name="Your Premium Plan">
+<kw name="Get Text" library="SeleniumLibrary">
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//span[@class='amt-text premimumm-amt']</arg>
+</arguments>
+<assign>
+<var>${Gst}</var>
+</assign>
+<msg timestamp="20200826 11:21:05.248" level="INFO">${Gst} = ₹ 16,447/-</msg>
+<status status="PASS" endtime="20200826 11:21:05.248" starttime="20200826 11:21:04.200"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${Gst}</arg>
+</arguments>
+<status status="PASS" endtime="20200826 11:21:05.253" starttime="20200826 11:21:05.250"></status>
+</kw>
+<status status="PASS" endtime="20200826 11:21:05.256" starttime="20200826 11:21:04.197"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//span[@class='quote-button medical-sbmt']</arg>
+</arguments>
+<msg timestamp="20200826 11:21:05.260" level="INFO">Clicking element 'xpath=//span[@class='quote-button medical-sbmt']'.</msg>
+<status status="PASS" endtime="20200826 11:21:07.883" starttime="20200826 11:21:05.258"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//label[@for='Indian']</arg>
+</arguments>
+<msg timestamp="20200826 11:21:07.887" level="INFO">Clicking element 'xpath=//label[@for='Indian']'.</msg>
+<status status="PASS" endtime="20200826 11:21:08.985" starttime="20200826 11:21:07.884"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//textarea[@id='edit-address1']</arg>
+<arg>Chennai Chennai Chennai</arg>
+</arguments>
+<msg timestamp="20200826 11:21:08.989" level="INFO">Typing text 'Chennai Chennai Chennai' into text field 'xpath=//textarea[@id='edit-address1']'.</msg>
+<status status="PASS" endtime="20200826 11:21:10.800" starttime="20200826 11:21:08.986"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//textarea[@id='edit-address2']</arg>
+<arg>City City City</arg>
+</arguments>
+<msg timestamp="20200826 11:21:10.804" level="INFO">Typing text 'City City City' into text field 'xpath=//textarea[@id='edit-address2']'.</msg>
+<status status="PASS" endtime="20200826 11:21:12.529" starttime="20200826 11:21:10.801"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=.//input[@id='edit-pincode']</arg>
+<arg>600095</arg>
+</arguments>
+<msg timestamp="20200826 11:21:12.533" level="INFO">Typing text '600095' into text field 'xpath=.//input[@id='edit-pincode']'.</msg>
+<status status="PASS" endtime="20200826 11:21:14.250" starttime="20200826 11:21:12.531"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//input[@id='edit-pan']</arg>
+<arg>BJTPB9087A</arg>
+</arguments>
+<msg timestamp="20200826 11:21:14.254" level="INFO">Typing text 'BJTPB9087A' into text field 'xpath=//input[@id='edit-pan']'.</msg>
+<status status="PASS" endtime="20200826 11:21:15.995" starttime="20200826 11:21:14.252"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//input[@id='edit-city']</arg>
+<arg>Chennai</arg>
+</arguments>
+<msg timestamp="20200826 11:21:15.999" level="INFO">Typing text 'Chennai' into text field 'xpath=//input[@id='edit-city']'.</msg>
+<status status="PASS" endtime="20200826 11:21:17.749" starttime="20200826 11:21:15.997"></status>
+</kw>
+<kw name="Select From List By Index" library="SeleniumLibrary">
+<doc>Selects options from selection list ``locator`` by ``indexes``.</doc>
+<arguments>
+<arg>xpath=//select[@id='edit-relation']</arg>
+<arg>4</arg>
+</arguments>
+<msg timestamp="20200826 11:21:17.753" level="INFO">Selecting options from selection list 'xpath=//select[@id='edit-relation']' by index 4.</msg>
+<status status="PASS" endtime="20200826 11:21:23.957" starttime="20200826 11:21:17.751"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//input[@id='edit-nomineefirstname']</arg>
+<arg>Deepak</arg>
+</arguments>
+<msg timestamp="20200826 11:21:23.961" level="INFO">Typing text 'Deepak' into text field 'xpath=//input[@id='edit-nomineefirstname']'.</msg>
+<status status="PASS" endtime="20200826 11:21:25.672" starttime="20200826 11:21:23.958"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//input[@id='edit-nomineelastname']</arg>
+<arg>Tharun</arg>
+</arguments>
+<msg timestamp="20200826 11:21:25.676" level="INFO">Typing text 'Tharun' into text field 'xpath=//input[@id='edit-nomineelastname']'.</msg>
+<status status="PASS" endtime="20200826 11:21:27.397" starttime="20200826 11:21:25.674"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//input[@id='txtDOBnominee']</arg>
+</arguments>
+<msg timestamp="20200826 11:21:27.401" level="INFO">Clicking element 'xpath=//input[@id='txtDOBnominee']'.</msg>
+<status status="PASS" endtime="20200826 11:21:28.550" starttime="20200826 11:21:27.399"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=(//td[@class="day"])[17]</arg>
+</arguments>
+<msg timestamp="20200826 11:21:28.552" level="INFO">Clicking element 'xpath=(//td[@class="day"])[17]'.</msg>
+<status status="PASS" endtime="20200826 11:21:29.634" starttime="20200826 11:21:28.551"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=(//span)[7]</arg>
+</arguments>
+<msg timestamp="20200826 11:21:29.638" level="INFO">Clicking element 'xpath=(//span)[7]'.</msg>
+<status status="PASS" endtime="20200826 11:21:30.740" starttime="20200826 11:21:29.635"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>//input[@name="declaration"]</arg>
+</arguments>
+<msg timestamp="20200826 11:21:30.744" level="INFO">Clicking element '//input[@name="declaration"]'.</msg>
+<status status="PASS" endtime="20200826 11:21:31.839" starttime="20200826 11:21:30.742"></status>
+</kw>
+<kw name="QUOTE ID">
+<kw name="Get Text" library="SeleniumLibrary">
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//h5[@class='amt-sub-text quoteId-txt']</arg>
+</arguments>
+<assign>
+<var>${Quote}</var>
+</assign>
+<msg timestamp="20200826 11:21:32.900" level="INFO">${Quote} = QUOTE ID: RSAIASP003349</msg>
+<status status="PASS" endtime="20200826 11:21:32.900" starttime="20200826 11:21:31.844"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${Quote}</arg>
+</arguments>
+<status status="PASS" endtime="20200826 11:21:32.913" starttime="20200826 11:21:32.911"></status>
+</kw>
+<status status="PASS" endtime="20200826 11:21:32.914" starttime="20200826 11:21:31.841"></status>
+</kw>
+<kw name="Your Premium Plan">
+<kw name="Get Text" library="SeleniumLibrary">
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//span[@class='amt-text premimumm-amt']</arg>
+</arguments>
+<assign>
+<var>${Gst}</var>
+</assign>
+<msg timestamp="20200826 11:21:33.947" level="INFO">${Gst} = ₹ 16,447/-</msg>
+<status status="PASS" endtime="20200826 11:21:33.947" starttime="20200826 11:21:32.917"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${Gst}</arg>
+</arguments>
+<status status="PASS" endtime="20200826 11:21:33.952" starttime="20200826 11:21:33.949"></status>
+</kw>
+<status status="PASS" endtime="20200826 11:21:33.954" starttime="20200826 11:21:32.915"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>id=proceedProposer</arg>
+</arguments>
+<msg timestamp="20200826 11:21:33.958" level="INFO">Clicking element 'id=proceedProposer'.</msg>
+<status status="PASS" endtime="20200826 11:21:58.519" starttime="20200826 11:21:33.955"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>20s</arg>
+</arguments>
+<msg timestamp="20200826 11:22:18.523" level="INFO">Slept 20 seconds</msg>
+<status status="PASS" endtime="20200826 11:22:18.523" starttime="20200826 11:21:58.521"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//input[@id='digit-1']</arg>
+<arg>1</arg>
+</arguments>
+<msg timestamp="20200826 11:22:18.528" level="INFO">Typing text '1' into text field 'xpath=//input[@id='digit-1']'.</msg>
+<status status="PASS" endtime="20200826 11:22:20.197" starttime="20200826 11:22:18.525"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//input[@id='digit-2']</arg>
+<arg>2</arg>
+</arguments>
+<msg timestamp="20200826 11:22:20.201" level="INFO">Typing text '2' into text field 'xpath=//input[@id='digit-2']'.</msg>
+<status status="PASS" endtime="20200826 11:22:21.845" starttime="20200826 11:22:20.199"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//input[@id='digit-3']</arg>
+<arg>3</arg>
+</arguments>
+<msg timestamp="20200826 11:22:21.849" level="INFO">Typing text '3' into text field 'xpath=//input[@id='digit-3']'.</msg>
+<status status="PASS" endtime="20200826 11:22:23.481" starttime="20200826 11:22:21.847"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//input[@id='digit-4']</arg>
+<arg>4</arg>
+</arguments>
+<msg timestamp="20200826 11:22:23.485" level="INFO">Typing text '4' into text field 'xpath=//input[@id='digit-4']'.</msg>
+<status status="PASS" endtime="20200826 11:22:25.117" starttime="20200826 11:22:23.483"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//input[@id='digit-5']</arg>
+<arg>5</arg>
+</arguments>
+<msg timestamp="20200826 11:22:25.121" level="INFO">Typing text '5' into text field 'xpath=//input[@id='digit-5']'.</msg>
+<status status="PASS" endtime="20200826 11:22:26.729" starttime="20200826 11:22:25.119"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//input[@id='digit-6']</arg>
+<arg>6</arg>
+</arguments>
+<msg timestamp="20200826 11:22:26.733" level="INFO">Typing text '6' into text field 'xpath=//input[@id='digit-6']'.</msg>
+<status status="PASS" endtime="20200826 11:22:28.363" starttime="20200826 11:22:26.731"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//button[text()='VERIFY']</arg>
+</arguments>
+<msg timestamp="20200826 11:22:28.367" level="INFO">Clicking element 'xpath=//button[text()='VERIFY']'.</msg>
+<status status="PASS" endtime="20200826 11:22:31.276" starttime="20200826 11:22:28.365"></status>
+</kw>
+<kw name="QUOTE ID">
+<kw name="Get Text" library="SeleniumLibrary">
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//h5[@class='amt-sub-text quoteId-txt']</arg>
+</arguments>
+<assign>
+<var>${Quote}</var>
+</assign>
+<msg timestamp="20200826 11:22:32.341" level="INFO">${Quote} = QUOTE ID: RSAIASP003349</msg>
+<status status="PASS" endtime="20200826 11:22:32.341" starttime="20200826 11:22:31.286"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${Quote}</arg>
+</arguments>
+<status status="PASS" endtime="20200826 11:22:32.346" starttime="20200826 11:22:32.343"></status>
+</kw>
+<status status="PASS" endtime="20200826 11:22:32.348" starttime="20200826 11:22:31.279"></status>
+</kw>
+<kw name="Your Premium Plan">
+<kw name="Get Text" library="SeleniumLibrary">
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//span[@class='amt-text premimumm-amt']</arg>
+</arguments>
+<assign>
+<var>${Gst}</var>
+</assign>
+<msg timestamp="20200826 11:22:33.425" level="INFO">${Gst} = ₹ 16,447/-</msg>
+<status status="PASS" endtime="20200826 11:22:33.425" starttime="20200826 11:22:32.352"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${Gst}</arg>
+</arguments>
+<status status="PASS" endtime="20200826 11:22:33.430" starttime="20200826 11:22:33.427"></status>
+</kw>
+<status status="PASS" endtime="20200826 11:22:33.432" starttime="20200826 11:22:32.349"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//a[text()='PAY']</arg>
+</arguments>
+<msg timestamp="20200826 11:22:33.435" level="INFO">Clicking element 'xpath=//a[text()='PAY']'.</msg>
+<status status="PASS" endtime="20200826 11:22:34.551" starttime="20200826 11:22:33.433"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//img[@alt='BillDesk']</arg>
+</arguments>
+<msg timestamp="20200826 11:22:34.555" level="INFO">Clicking element 'xpath=//img[@alt='BillDesk']'.</msg>
+<status status="PASS" endtime="20200826 11:22:35.647" starttime="20200826 11:22:34.553"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//button[text()='PAY']</arg>
+</arguments>
+<msg timestamp="20200826 11:22:35.651" level="INFO">Clicking element 'xpath=//button[text()='PAY']'.</msg>
+<status status="PASS" endtime="20200826 11:22:36.754" starttime="20200826 11:22:35.648"></status>
+</kw>
+<status status="PASS" endtime="20200826 11:22:36.756" critical="yes" starttime="20200826 11:19:31.280"></status>
+</test>
+<status status="PASS" endtime="20200826 11:22:36.758" starttime="20200826 11:19:30.995"></status>
+</suite>
+<status status="PASS" endtime="20200826 11:22:36.764" starttime="20200826 11:19:30.960"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="1">Critical Tests</stat>
+<stat fail="0" pass="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="Arogya-Sanjeevani-ASP" pass="1">Arogya-Sanjeevani-ASP</stat>
+<stat fail="0" id="s1-s1" name="Asp10" pass="1">Arogya-Sanjeevani-ASP.Asp10</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
