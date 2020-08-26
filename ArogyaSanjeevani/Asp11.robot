@@ -42,12 +42,8 @@ Your Premium Plan
 * Test Cases *
 NSTP Individual case with Daughter and BMI above 33
        
-     Set Selenium Speed    .5
-     Open Browser     ${browser}   chrome 
-     maximize Browser Window
-     Set Browser Implicit Wait    50s     
-     
-     
+    Jenkins  
+          
         # GetQuote Page   
     Click Element    xpath=.//i[@class='rs-icon icon-plus']
         # Select Daughter
